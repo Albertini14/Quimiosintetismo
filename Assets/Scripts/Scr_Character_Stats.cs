@@ -11,6 +11,8 @@ public class Scr_Character_Stats : MonoBehaviour
 	public Stat Speed_Base;
 	public Stat Speed_Mult;
 	public Stat Resilience;
+	public Stat Regen_Base;
+	public Stat Regen_Mult;
 
 	
 	void Awake()
@@ -18,7 +20,7 @@ public class Scr_Character_Stats : MonoBehaviour
 		currentHealth = Health_Base.GetValue() * Health_Mult.GetValue();
 	}
 
-	public void TakeDamage(float damage)
+	public virtual void TakeDamage(float damage)
 	{
 		damage -= Resilience.GetValue();
 		damage = Mathf.Clamp(damage, 0, int.MaxValue);

@@ -17,8 +17,10 @@ MonoBehaviour:
   min_level: 1
   max_level: 5
   Health_Base_mod: 100
-  Health_Mult_mod: 1.25
+  Health_Mult_mod: 0.25
   Speed_Base_mod: 1
   Speed_Mult_mod: 1
   Resilience_mod: 0
+  Regen_Base_mod: 1
+  Regen_Mult_mod: 0
   Player_Stats: {fileID: 0}
