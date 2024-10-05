@@ -11,7 +11,8 @@ public class Scr_Player_Movement : MonoBehaviour
 {
 
 	Vector2 movement;
-	public float speed;
+	[SerializeField] Scr_Player_Stats Stats;
+	//public float speed;
 
 	public Rigidbody2D rb;
 
@@ -23,7 +24,7 @@ public class Scr_Player_Movement : MonoBehaviour
 	}
 
 	void FixedUpdate(){
-		rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+		rb.MovePosition(rb.position + movement  * Time.fixedDeltaTime);
 	}
 
 }
