@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ac8b6828db856a042bb576f05dd05959
+guid: b62100dce051ab3468f6b949d03687c1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,133 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: template_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 094f29b5ac517444fbdb6c7b979ec395
-      internalID: 1777897328
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: template_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8bf0a25f0a076af4791048c3bd3b95c3
-      internalID: -380762216
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: template_2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 320
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cd88a6d6359db9c4e853a61908173e14
-      internalID: 135641945
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: template_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9bc844a7c9a877548a2d838618d20d20
-      internalID: -1251896152
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: template_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8ccceea929c118748b574aeba269cff1
-      internalID: -226355608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: template_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 256
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 93072c61fb96cff46838da609bec33e8
-      internalID: -335003843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: template_6
+      name: Cool Template_0
       rect:
         serializedVersion: 2
         x: 0
@@ -250,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b98fb0c4e2fdfd4fb5e5a7f9d417f72
-      internalID: -1318414704
+      spriteID: d89042403c8c1854a8980a24107bf99f
+      internalID: 1637307081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: template_7
+      name: Cool Template_1
       rect:
         serializedVersion: 2
         x: 64
@@ -271,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bf4d79e1ad3f1f40b5f99e3e999258e
-      internalID: 1817967400
+      spriteID: df9fa911cb8544a40a238ef26cfb2a57
+      internalID: -1500886581
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: template_8
+      name: Cool Template_2
       rect:
         serializedVersion: 2
         x: 128
@@ -292,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: efedfbc0417ee1a4b8a4c9320a56e68c
-      internalID: -387302931
+      spriteID: 03e60ef9dd4aba945a9f59cbbbb8676d
+      internalID: 1478596935
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: template_9
+      name: Cool Template_3
       rect:
         serializedVersion: 2
         x: 0
@@ -313,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9eabaab7db748ec45aa5f942ebf06718
-      internalID: 1574015415
+      spriteID: 13591f41fadea9f459480351b95a96f7
+      internalID: 390784424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: template_10
+      name: Cool Template_4
       rect:
         serializedVersion: 2
         x: 64
@@ -334,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9433c5b8752b2fd48b6922e971dd57e6
-      internalID: 1196205133
+      spriteID: c0d3107c7d5717b4098e56710d62efa3
+      internalID: 1845339395
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: template_11
+      name: Cool Template_5
       rect:
         serializedVersion: 2
         x: 128
@@ -355,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebb20c570faedfa4f876e2af862f5ed8
-      internalID: 1512531317
+      spriteID: d2bc8168efd5eff4386e4a5f9ce4021b
+      internalID: -1150354207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: template_12
+      name: Cool Template_6
       rect:
         serializedVersion: 2
         x: 0
@@ -376,14 +250,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e81b945a2a5a6254d919bd02fe9ad220
-      internalID: 387084074
+      spriteID: f296c6a926b74124994a2b0e565c8b46
+      internalID: 1093389025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: template_13
+      name: Cool Template_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f3c9951ae380ac4da3b89e77fcc3c75
+      internalID: -325589428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cool Template_8
       rect:
         serializedVersion: 2
         x: 128
@@ -397,14 +292,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd7ecf36e7e8f8e45960c9a98c64c59e
-      internalID: 2093851774
+      spriteID: a213ba95c297d994ebbfed494b635438
+      internalID: -1320030756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: template_14
+      name: Cool Template_9
       rect:
         serializedVersion: 2
         x: 0
@@ -418,14 +313,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 88c3f01491371944a859cf0b0b10ec36
-      internalID: 1427047931
+      spriteID: 5d1310a723be5aa4d8bde464fb16db59
+      internalID: -663673795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: template_15
+      name: Cool Template_10
       rect:
         serializedVersion: 2
         x: 64
@@ -439,14 +334,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 149548fb0071fb54699bb02762704039
-      internalID: -1036054059
+      spriteID: 13b351e7c63d38c4995d859d83ab0f3a
+      internalID: -999775412
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: template_16
+      name: Cool Template_11
       rect:
         serializedVersion: 2
         x: 128
@@ -460,8 +355,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baa339c8be880264a903aa1a5c6aba56
-      internalID: 487018067
+      spriteID: 003d59e0b8648e542bc339568a904cd1
+      internalID: -1114542287
       vertices: []
       indices: 
       edges: []
@@ -477,23 +372,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      template_0: 1777897328
-      template_1: -380762216
-      template_10: 1196205133
-      template_11: 1512531317
-      template_12: 387084074
-      template_13: 2093851774
-      template_14: 1427047931
-      template_15: -1036054059
-      template_16: 487018067
-      template_2: 135641945
-      template_3: -1251896152
-      template_4: -226355608
-      template_5: -335003843
-      template_6: -1318414704
-      template_7: 1817967400
-      template_8: -387302931
-      template_9: 1574015415
+      Cool Template_0: 1637307081
+      Cool Template_1: -1500886581
+      Cool Template_10: -999775412
+      Cool Template_11: -1114542287
+      Cool Template_2: 1478596935
+      Cool Template_3: 390784424
+      Cool Template_4: 1845339395
+      Cool Template_5: -1150354207
+      Cool Template_6: 1093389025
+      Cool Template_7: -325589428
+      Cool Template_8: -1320030756
+      Cool Template_9: -663673795
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
