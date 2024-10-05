@@ -7,7 +7,7 @@ using UnityEditor.UI;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PlayerMovement : MonoBehaviour
+public class Scr_Player_Movement : MonoBehaviour
 {
 
 	Vector2 movement;
