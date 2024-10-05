@@ -25,5 +25,6 @@ public class Scr_Timer : MonoBehaviour
         time2text = time2evolve - ((Time.time - start_time) / end_time * time2evolve); 
 		txt.text = time2text.ToString("n0") + " years";
 
+		//on reaching 0 die
     }
 }

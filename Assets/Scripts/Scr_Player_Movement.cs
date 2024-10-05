@@ -21,6 +21,12 @@ public class Scr_Player_Movement : MonoBehaviour
     {
 		movement.x = Input.GetAxisRaw("Horizontal");
 		movement.y = Input.GetAxisRaw("Vertical");	
+		if (movement.x > 0){
+			GetComponentInChildren<SpriteRenderer>().flipX = true;
+		}
+		else if (movement.x < 0){
+			GetComponentInChildren<SpriteRenderer>().flipX = false;
+		}
 	}
 
 	void FixedUpdate(){

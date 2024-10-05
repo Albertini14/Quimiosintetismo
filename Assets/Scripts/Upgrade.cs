@@ -18,6 +18,8 @@ public class Upgrade : ScriptableObject
 	public float Resilience_mod = 0;
 	public float Regen_Base_mod = 0;
 	public float Regen_Mult_mod = 0;
+	public float Damage_Base_mod = 0;
+	public float Damage_Mult_mod = 1; 
 
 	public Scr_Player_Stats Player_Stats; 
 

@@ -13,6 +13,8 @@ public class Scr_Character_Stats : MonoBehaviour
 	public Stat Resilience;
 	public Stat Regen_Base;
 	public Stat Regen_Mult;
+	public Stat Damage_Base;
+	public Stat Damage_Mult;
 
 	
 	void Awake()
@@ -37,6 +39,7 @@ public class Scr_Character_Stats : MonoBehaviour
 	public virtual void Die()
 	{
 		Debug.Log(transform.name + " died.");
+		Destroy(this);
 	}
 }
 
