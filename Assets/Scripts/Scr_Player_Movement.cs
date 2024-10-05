@@ -24,7 +24,7 @@ public class Scr_Player_Movement : MonoBehaviour
 	}
 
 	void FixedUpdate(){
-		rb.MovePosition(rb.position + movement  * Time.fixedDeltaTime);
+		rb.MovePosition(rb.position + movement * (Stats.Speed_Base.GetValue() * Stats.Speed_Mult.GetValue()) * Time.fixedDeltaTime);
 	}
 
 }

@@ -1,44 +1,41 @@
-using System.Collections;
-using System.Collections.Generic;
-using JetBrains.Annotations;
-using Unity.VisualScripting.Antlr3.Runtime.Misc;
-using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Players Stats")]
-public class Scr_Player_Stats : ScriptableObject
+
+public class Scr_Player_Stats : MonoBehaviour
 {
 
-	public Dictionary<Stat, float> stats = new Dictionary<Stat, float>();
+	public int currentHealth;
 
-	public float GetStat(Stat stat)
+	public Stat Health_Base;
+	public Stat Health_Mult;
+	public Stat Speed_Base;
+	public Stat Speed_Mult;
+	public Stat Resilience;
+
+	
+	void Awake()
 	{
-		if(stats.TryGetValue(stat, out float value)){
-			return value;
-		}
-		else{
-			Debug.LogError("Stat " + stat + " not found");
-			return 0;
-		}
+		currentHealth = Health_Base.GetValue() * Health_Mult.GetValue();
 	}
 
-	public void ChangeStat(Stat stat, float amount){
-		if(stats.TryGetValue(stat, out float value)){
-			stats[stat] += amount;
-		}
-		else{
-			Debug.LogError("Stat " + stat + " not found to change");
-		}
-	}
-
-	public enum Stat
+	public void TakeDamage(int damage)
 	{
-		Health_Base,
-		Health_Mult,
-		Movement_Speed_Base,
-		Movement_Speed_Mut
+		damage -= Resilience.GetValue();
+		damage = Mathf.Clamp(damage, 0, int.MaxValue);
+
+		currentHealth -= damage;
+		Debug.Log(transform.name + " takes " + damage + " damage.");
+
+		if (currentHealth <= 0)
+		{
+			Die();
+		}
 	}
 
+	public virtual void Die()
+	{
+		Debug.Log(transform.name + " died.");
+	}
 }
 
 
