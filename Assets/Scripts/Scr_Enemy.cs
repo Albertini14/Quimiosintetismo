@@ -10,6 +10,9 @@ public class Scr_Enemy : MonoBehaviour
 
 	// On collide with enemy with inner trigger damage it.
 
+
+	float TimeSinceDmg;
+
 	[SerializeField] Scr_Character_Stats en_stat;
 
 	private void OnTriggerEnter2D(Collider2D other){
