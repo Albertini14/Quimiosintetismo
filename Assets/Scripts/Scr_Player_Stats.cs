@@ -62,7 +62,7 @@ public class Scr_Player_Stats : Scr_Character_Stats
 		//		change to duplicate
 		// 	else 
 		// 		Flag Game over
-		
+		Debug.Log("died");
 		
 		//base.Die();
 		
