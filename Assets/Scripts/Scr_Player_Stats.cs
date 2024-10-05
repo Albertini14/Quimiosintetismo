@@ -1,42 +1,29 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-
-public class Scr_Player_Stats : MonoBehaviour
+public class Scr_Player_Stats : Scr_Character_Stats
 {
 
-	public int currentHealth;
-
-	public Stat Health_Base;
-	public Stat Health_Mult;
-	public Stat Speed_Base;
-	public Stat Speed_Mult;
-	public Stat Resilience;
-
-	
-	void Awake()
+	public void OnSkillTreeChanged(Upgrade newUpgrade)
 	{
-		currentHealth = Health_Base.GetValue() * Health_Mult.GetValue();
-	}
-
-	public void TakeDamage(int damage)
-	{
-		damage -= Resilience.GetValue();
-		damage = Mathf.Clamp(damage, 0, int.MaxValue);
-
-		currentHealth -= damage;
-		Debug.Log(transform.name + " takes " + damage + " damage.");
-
-		if (currentHealth <= 0)
+		Debug.Log("delageted");
+		// Add new modifiers
+		if (newUpgrade != null)
 		{
-			Die();
+			Resilience.AddModifier(newUpgrade.Resilience_mod);
+			Health_Base.AddModifier(newUpgrade.Resilience_mod);
+			Health_Mult.AddModifier(newUpgrade.Resilience_mod);
+			Speed_Base.AddModifier(newUpgrade.Speed_Base_mod);
+			Speed_Mult.AddModifier(newUpgrade.Speed_Mult_mod);
 		}
+
+
 	}
 
-	public virtual void Die()
+	public override void Die()
 	{
-		Debug.Log(transform.name + " died.");
+		base.Die();
+		//kill current character
 	}
 }
-
-
-

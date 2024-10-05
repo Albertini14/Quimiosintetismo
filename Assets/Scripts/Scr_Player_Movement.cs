@@ -11,7 +11,7 @@ public class Scr_Player_Movement : MonoBehaviour
 {
 
 	Vector2 movement;
-	[SerializeField] Scr_Player_Stats Stats;
+	public Scr_Player_Stats Stats;
 	//public float speed;
 
 	public Rigidbody2D rb;
