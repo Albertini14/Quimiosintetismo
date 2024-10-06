@@ -86,7 +86,7 @@ public class Scr_Player_Stats : Scr_Character_Stats
 		txt_progress.text = Evolution.GetValue().ToString("n0") + " / " + Evolve_Goal.ToString("n0");
 		// check if full == win
 		if(Evolution.GetValue() >= Evolve_Goal){
-			SceneManager.LoadScene(Level + 1);
+			SceneManager.LoadScene(Level);
 		}
 	}
 

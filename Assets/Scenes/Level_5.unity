@@ -203,6 +203,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5962057449109904299, guid: 68608166441512243af7bd667959b3ae, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 11400000, guid: 477f0003bda946a49957d0b075bf3ddb, type: 2}
+    - target: {fileID: 5962057449109904299, guid: 68608166441512243af7bd667959b3ae, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Buy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5962057449109904299, guid: 68608166441512243af7bd667959b3ae, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: Upgrade, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5962057449109904299, guid: 68608166441512243af7bd667959b3ae, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: Upgrade, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 5962354150897325603, guid: 68608166441512243af7bd667959b3ae, type: 3}
       propertyPath: m_Pivot.x
       value: 0
