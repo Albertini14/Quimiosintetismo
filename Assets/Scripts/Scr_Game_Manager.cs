@@ -36,7 +36,7 @@ public class Scr_Game_Manager : MonoBehaviour
 	}
 
 	public void RestartScene(){
-		SceneManager.LoadScene(CurrentLevel);
+		SceneManager.LoadScene(CurrentLevel -1 );
 	}
 
 	public void Onclick(Upgrade upgrade){

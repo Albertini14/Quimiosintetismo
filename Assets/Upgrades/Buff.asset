@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5345d018a7f75ce44a4d24917ae72343, type: 3}
+  m_Name: Buff
+  m_EditorClassIdentifier: 
+  name: Buff
+  icon: {fileID: 0}
+  min_level: 1
+  max_level: 5
+  Health_Base_mod: 100
+  Health_Mult_mod: 0.25
+  Speed_Base_mod: 1
+  Speed_Mult_mod: 1
+  Resilience_mod: 0
+  Regen_Base_mod: 1
+  Regen_Mult_mod: 0
+  Player_Stats: {fileID: 0}

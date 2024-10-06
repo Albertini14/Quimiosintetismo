@@ -18407,6 +18407,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 8439234806961497633, guid: 3fb77ec1658b0e84f90c6eb6841b8839, type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -87000,6 +87004,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6887369584109135494, guid: 8726538903f20e148b28fde217ef7265, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8184106821907191796, guid: 8726538903f20e148b28fde217ef7265, type: 3}
       propertyPath: m_Name
       value: Player
@@ -87151,7 +87159,7 @@ PrefabInstance:
       objectReference: {fileID: 825727701}
     - target: {fileID: 7075387386358394559, guid: e5c13931fe9557940a8fcede0b93fe13, type: 3}
       propertyPath: end_time
-      value: 15
+      value: 180
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
