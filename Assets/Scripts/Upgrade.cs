@@ -28,9 +28,9 @@ public class Upgrade : ScriptableObject
 	{
 		// Add modifiers
 		FindObjectOfType<Scr_Player_Stats>().OnSkillTreeChanged(newUpgrade);
-		Debug.Log(FindObjectOfType<Scr_Player_Stats>().name);
+		// Debug.Log(FindObjectOfType<Scr_Player_Stats>().name);
 		
-		Debug.Log("Bought " + name);
+		// Debug.Log("Bought " + name);
 
 	}
 
