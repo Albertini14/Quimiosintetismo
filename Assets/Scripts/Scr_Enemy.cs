@@ -31,6 +31,10 @@ public class Scr_Enemy : MonoBehaviour
 			FindObjectOfType<Scr_Player_Stats>().TakeDamage(en_stat.Damage_Base.GetValue() * en_stat.Damage_Mult.GetValue());
 			TimeSinceDmg = Time.time;
 			CanAttack = false;
+		} else if (other.tag ==	"Clone" && CanAttack){
+			other.GetComponent<Scr_Character_Stats>().TakeDamage(en_stat.Damage_Base.GetValue() * en_stat.Damage_Mult.GetValue());
+			TimeSinceDmg = Time.time;
+			CanAttack = false;
 		}
 	}
 }

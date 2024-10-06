@@ -8,8 +8,6 @@ public class Upgrade : ScriptableObject
 
 	new public string name = "New Upgrade";
 	public Sprite icon = null;              // Skill icon
-	public int min_level = 1;
-	public int max_level = 5;
 
 	public float Health_Base_mod = 0;
 	public float Health_Mult_mod = 1;

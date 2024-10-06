@@ -16,8 +16,8 @@ public class Scr_Enemy_Movement : MonoBehaviour
 
 	[SerializeField] float AggroDis = 10;
 
-	bool following = false;
-	GameObject prey = null;
+	[SerializeField] bool following = false;
+	GameObject prey;
 
 
 	// Start is called before the first frame update
@@ -32,13 +32,21 @@ public class Scr_Enemy_Movement : MonoBehaviour
     {
         if (following){
 			transform.position = Vector2.MoveTowards(transform.position, prey.transform.position, en_stat.Speed_Base.GetValue() * en_stat.Speed_Mult.GetValue() * Time.deltaTime);
-		} 
-		if (Vector3.Distance(transform.position, prey.transform.position) > AggroDis){
+		}
+		if (!prey.activeSelf)
+		{
 			following = false;
 			hurtbox.enabled = false;
 			detectZone.enabled = true;
-			
 		}
+		else if (prey != null && Vector3.Distance(transform.position, prey.transform.position) > AggroDis)
+		{
+			following = false;
+			hurtbox.enabled = false;
+			detectZone.enabled = true;
+
+		}
+		
     }
 
 

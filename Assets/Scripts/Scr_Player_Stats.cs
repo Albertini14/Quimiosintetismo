@@ -9,10 +9,14 @@ public class Scr_Player_Stats : Scr_Character_Stats
 	[SerializeField] TextMeshProUGUI txt_health;
 	[SerializeField] TextMeshProUGUI txt_progress;
 
+	[SerializeField] float Evolve_Goal = 3;
+
 	public Stat Evolution;
+	[SerializeField] int Level;
 
 	void Start(){
 		UpdateUI();
+		txt_progress.text = Evolution.GetValue().ToString("n0") + " / " + Evolve_Goal.ToString("n0");
 	}
 
 	void Update(){
@@ -43,8 +47,38 @@ public class Scr_Player_Stats : Scr_Character_Stats
 
 	}
 
+	// Duplicate
+	// grapple
+	// Dash
+	// Attack
+
+
+
+	public void OnSkillGained(Skill newSkill){
+		switch (newSkill.name){
+			case "Replicate":
+				if(newSkill.min_level <= Level && Level <= newSkill.max_level){
+					
+				}
+				break;
+			case "Grapple":
+			
+				break;
+			case "Dash":
+			
+				break;
+			case "Attack":
+			
+				break;
+		}
+	}
+
+
 	public void GainXp(float xp){
 		//gain xp, on reaching max, pass to new level
+		Evolution.AddModifier(xp);
+		txt_progress.text = Evolution.GetValue().ToString("n0") + " / " + Evolve_Goal.ToString("n0");
+		// check if full == win
 	}
 
 	public override void TakeDamage(float damage){
