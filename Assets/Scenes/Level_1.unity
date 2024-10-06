@@ -553,13 +553,13 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11400000, guid: 477f0003bda946a49957d0b075bf3ddb, type: 2}
-        m_TargetAssemblyTypeName: Upgrade, Assembly-CSharp
+      - m_Target: {fileID: 11400000, guid: bd529a384564dc945b7804262263f8ca, type: 2}
+        m_TargetAssemblyTypeName: Skill, Assembly-CSharp
         m_MethodName: Buy
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 477f0003bda946a49957d0b075bf3ddb, type: 2}
-          m_ObjectArgumentAssemblyTypeName: Upgrade, Assembly-CSharp
+          m_ObjectArgument: {fileID: 11400000, guid: bd529a384564dc945b7804262263f8ca, type: 2}
+          m_ObjectArgumentAssemblyTypeName: Skill, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -603,27 +603,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770671434}
   m_CullTransparentMesh: 1
---- !u!1 &781018976 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8184106821907191796, guid: 8726538903f20e148b28fde217ef7265, type: 3}
-  m_PrefabInstance: {fileID: 2701226888807228301}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &781018981
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 781018976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17baaa450ab22104e92b5f1b1882464b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CanTeleport: 1
-  CD: 3
-  timeSinceTp: 0
-  clone: {fileID: 5614828317225798914, guid: 58187f96502e1444cb9b74a0d8d5d1f8, type: 3}
 --- !u!1 &792656657
 GameObject:
   m_ObjectHideFlags: 0
@@ -26059,10 +26038,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8184106821907191796, guid: 8726538903f20e148b28fde217ef7265, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 781018981}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8726538903f20e148b28fde217ef7265, type: 3}
 --- !u!1001 &5265834046027727893
 PrefabInstance:

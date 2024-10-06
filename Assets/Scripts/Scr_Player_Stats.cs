@@ -55,10 +55,11 @@ public class Scr_Player_Stats : Scr_Character_Stats
 
 
 	public void OnSkillGained(Skill newSkill){
+		Debug.Log(newSkill.name);
 		switch (newSkill.name){
 			case "Replicate":
 				if(newSkill.min_level <= Level && Level <= newSkill.max_level){
-					
+					FindObjectOfType<Clone>().enabled = true;
 				}
 				break;
 			case "Grapple":

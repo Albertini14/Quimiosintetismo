@@ -19,7 +19,7 @@ public class Upgrade : ScriptableObject
 	public float Damage_Base_mod = 0;
 	public float Damage_Mult_mod = 1; 
 
-	public Scr_Player_Stats Player_Stats; 
+	Scr_Player_Stats Player_Stats; 
 
 
 	public virtual void Buy(Upgrade newUpgrade)

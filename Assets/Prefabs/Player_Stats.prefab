@@ -74,6 +74,8 @@ MonoBehaviour:
     finalValue: 0
   txt_health: {fileID: 0}
   txt_progress: {fileID: 0}
+  Evolve_Goal: 3
   Evolution:
     baseValue: 0
     finalValue: 0
+  Level: 1

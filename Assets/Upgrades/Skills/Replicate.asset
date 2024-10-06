@@ -15,14 +15,13 @@ MonoBehaviour:
   name: Replicate
   icon: {fileID: 0}
   Health_Base_mod: 0
-  Health_Mult_mod: 1
+  Health_Mult_mod: 0
   Speed_Base_mod: 0
-  Speed_Mult_mod: 1
+  Speed_Mult_mod: 0
   Resilience_mod: 0
   Regen_Base_mod: 0
   Regen_Mult_mod: 0
   Damage_Base_mod: 0
-  Damage_Mult_mod: 1
-  Player_Stats: {fileID: 0}
+  Damage_Mult_mod: 0
   min_level: 1
   max_level: 1
