@@ -16,6 +16,10 @@ public class Scr_Player_Movement : MonoBehaviour
 
 	public Rigidbody2D rb;
 
+	void Start(){
+		Stats = FindAnyObjectByType<Scr_Player_Stats>();
+	}
+
     // Update is called once per frame
     void Update()
     {

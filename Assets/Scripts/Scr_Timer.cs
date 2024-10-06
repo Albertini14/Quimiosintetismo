@@ -26,5 +26,8 @@ public class Scr_Timer : MonoBehaviour
 		txt.text = time2text.ToString("n0") + " years";
 
 		//on reaching 0 die
+		if(time2text <= 0){
+			FindObjectOfType<Scr_Game_Manager>().RestartScene();
+		}
     }
 }

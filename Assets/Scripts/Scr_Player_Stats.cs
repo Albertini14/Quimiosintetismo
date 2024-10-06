@@ -2,19 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Scr_Player_Stats : Scr_Character_Stats
 {
 
-	[SerializeField] TextMeshProUGUI txt_health;
-	[SerializeField] TextMeshProUGUI txt_progress;
+	public TextMeshProUGUI txt_health;
+	public TextMeshProUGUI txt_progress;
 
-	[SerializeField] float Evolve_Goal = 3;
+	public float Evolve_Goal = 3;
 
 	public Stat Evolution;
-	[SerializeField] int Level;
+	public int Level;
 
 	void Start(){
+		DontDestroyOnLoad(gameObject);
 		UpdateUI();
 		txt_progress.text = Evolution.GetValue().ToString("n0") + " / " + Evolve_Goal.ToString("n0");
 	}
@@ -63,13 +65,13 @@ public class Scr_Player_Stats : Scr_Character_Stats
 				}
 				break;
 			case "Grapple":
-			
+				//activate grapple
 				break;
 			case "Dash":
-			
+				//activate dash
 				break;
 			case "Attack":
-			
+				//activate attack
 				break;
 		}
 	}
@@ -80,6 +82,9 @@ public class Scr_Player_Stats : Scr_Character_Stats
 		Evolution.AddModifier(xp);
 		txt_progress.text = Evolution.GetValue().ToString("n0") + " / " + Evolve_Goal.ToString("n0");
 		// check if full == win
+		if(Evolution.GetValue() >= Evolve_Goal){
+			SceneManager.LoadScene(Level + 1);
+		}
 	}
 
 	public override void TakeDamage(float damage){
@@ -93,12 +98,10 @@ public class Scr_Player_Stats : Scr_Character_Stats
 
 	public override void Die()
 	{
-		// 	if there is a duplicate 
-		//		change to duplicate
-		// 	else 
-		// 		Flag Game over
 		Debug.Log("died");
 		
+		FindObjectOfType<Scr_Game_Manager>().RestartScene();
+
 		//base.Die();
 		
 	}
@@ -107,6 +110,13 @@ public class Scr_Player_Stats : Scr_Character_Stats
 		// Debug.Log("ui updated");
 		txt_health.text = currentHealth.ToString("n0") + " / " + (Health_Base.GetValue() * Health_Mult.GetValue()).ToString("n0");
 		// Debug.Log(Speed_Base.GetValue());
+	}
+
+	public void checkSkills(){
+		if (Level > 1)
+		{
+			FindObjectOfType<Clone>().enabled = false;
+		}
 	}
 
 }
