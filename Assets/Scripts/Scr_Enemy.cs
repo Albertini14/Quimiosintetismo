@@ -32,6 +32,7 @@ public class Scr_Enemy : MonoBehaviour
 			TimeSinceDmg = Time.time;
 			CanAttack = false;
 		} else if (other.tag ==	"Clone" && CanAttack){
+			Debug.LogWarning("Clonedmg");
 			other.GetComponent<Scr_Character_Stats>().TakeDamage(en_stat.Damage_Base.GetValue() * en_stat.Damage_Mult.GetValue());
 			TimeSinceDmg = Time.time;
 			CanAttack = false;

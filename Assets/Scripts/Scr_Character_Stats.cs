@@ -39,7 +39,7 @@ public class Scr_Character_Stats : MonoBehaviour
 	public virtual void Die()
 	{
 		Debug.Log(transform.name + " died.");
-		Destroy(this);
+		Destroy(this.gameObject);
 	}
 }
 

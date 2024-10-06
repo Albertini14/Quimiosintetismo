@@ -17,7 +17,7 @@ public class Scr_Enemy_Movement : MonoBehaviour
 	[SerializeField] float AggroDis = 10;
 
 	[SerializeField] bool following = false;
-	GameObject prey;
+	[SerializeField] GameObject prey;
 
 
 	// Start is called before the first frame update
@@ -30,28 +30,32 @@ public class Scr_Enemy_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (following){
+        if (following && prey != null){
 			transform.position = Vector2.MoveTowards(transform.position, prey.transform.position, en_stat.Speed_Base.GetValue() * en_stat.Speed_Mult.GetValue() * Time.deltaTime);
 		}
-		if (!prey.activeSelf)
+
+		if (prey == null && following)
 		{
+			
+			Debug.Log("prey does not exist");
+			prey = null;
 			following = false;
 			hurtbox.enabled = false;
 			detectZone.enabled = true;
-		}
+		} 
 		else if (prey != null && Vector3.Distance(transform.position, prey.transform.position) > AggroDis)
 		{
 			following = false;
 			hurtbox.enabled = false;
 			detectZone.enabled = true;
 
-		}
-		
-    }
+		} 
+
+	}
 
 
 	private void OnTriggerEnter2D (Collider2D other){
-		if (other.tag == "Player"){
+		if (other.tag == "Player" || other.tag == "Clone"){
 			following = true;
 			prey = other.gameObject;
 			detectZone.enabled = false;

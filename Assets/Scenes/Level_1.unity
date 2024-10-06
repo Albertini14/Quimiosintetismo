@@ -620,6 +620,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17baaa450ab22104e92b5f1b1882464b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  CanTeleport: 1
+  CD: 3
+  timeSinceTp: 0
+  clone: {fileID: 5614828317225798914, guid: 58187f96502e1444cb9b74a0d8d5d1f8, type: 3}
 --- !u!1 &792656657
 GameObject:
   m_ObjectHideFlags: 0
@@ -25983,6 +25987,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 9147574491574470459, guid: 3fb77ec1658b0e84f90c6eb6841b8839, type: 3}
+      propertyPath: Speed_Base.baseValue
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9147574491574470459, guid: 3fb77ec1658b0e84f90c6eb6841b8839, type: 3}
+      propertyPath: Damage_Base.baseValue
+      value: 100
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -26002,11 +26014,11 @@ PrefabInstance:
       objectReference: {fileID: 454846653}
     - target: {fileID: 6008332951122819542, guid: 8726538903f20e148b28fde217ef7265, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.03
+      value: 22.1
       objectReference: {fileID: 0}
     - target: {fileID: 6008332951122819542, guid: 8726538903f20e148b28fde217ef7265, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.02
+      value: 10.9
       objectReference: {fileID: 0}
     - target: {fileID: 6008332951122819542, guid: 8726538903f20e148b28fde217ef7265, type: 3}
       propertyPath: m_LocalPosition.z
@@ -26173,18 +26185,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Clone
       objectReference: {fileID: 0}
-    - target: {fileID: 5614828317225798914, guid: 58187f96502e1444cb9b74a0d8d5d1f8, type: 3}
-      propertyPath: m_TagString
-      value: Clone
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 5412781009228500369, guid: 58187f96502e1444cb9b74a0d8d5d1f8, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5614828317225798914, guid: 58187f96502e1444cb9b74a0d8d5d1f8, type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 8696441270496234182}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 58187f96502e1444cb9b74a0d8d5d1f8, type: 3}
 --- !u!1001 &8065528479988049437
 PrefabInstance:
@@ -26251,51 +26255,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: be5078cc7f1a04a4781c937a7286f320, type: 3}
---- !u!1 &8696441270496234181 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5614828317225798914, guid: 58187f96502e1444cb9b74a0d8d5d1f8, type: 3}
-  m_PrefabInstance: {fileID: 6029786260578196173}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &8696441270496234182
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8696441270496234181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8657025749d9c6c4db979781795acdfd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  currentHealth: 25
-  Health_Base:
-    baseValue: 25
-    finalValue: 0
-  Health_Mult:
-    baseValue: 1
-    finalValue: 0
-  Speed_Base:
-    baseValue: 1.5
-    finalValue: 0
-  Speed_Mult:
-    baseValue: 1
-    finalValue: 0
-  Resilience:
-    baseValue: 0
-    finalValue: 0
-  Regen_Base:
-    baseValue: 0
-    finalValue: 0
-  Regen_Mult:
-    baseValue: 1
-    finalValue: 0
-  Damage_Base:
-    baseValue: 0
-    finalValue: 0
-  Damage_Mult:
-    baseValue: 1
-    finalValue: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
