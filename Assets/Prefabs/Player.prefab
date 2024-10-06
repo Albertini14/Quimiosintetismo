@@ -211,6 +211,7 @@ GameObject:
   - component: {fileID: 7200871177781316109}
   - component: {fileID: 2200085602951270850}
   - component: {fileID: 6075756832797934943}
+  - component: {fileID: 6887369584109135494}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -337,3 +338,19 @@ MonoBehaviour:
   CD: 3
   timeSinceTp: 0
   clone: {fileID: 5614828317225798914, guid: 58187f96502e1444cb9b74a0d8d5d1f8, type: 3}
+--- !u!114 &6887369584109135494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8184106821907191796}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36f9a10b14417d44eb6dba8f7da9a9ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CanAttack: 1
+  CD: 3
+  timeSinceAttack: 0
+  Hurt: {fileID: 5014099311569019757, guid: b07f14d4b58275549b0a92fba89ae535, type: 3}

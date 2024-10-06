@@ -33,8 +33,8 @@ public class Scr_Game_Manager : MonoBehaviour
 		scr.txt_progress = progress;
 		scr.GainXp(0);
 
-		button1.GetComponent<Button>().onClick.AddListener(() => upgrade1.Buy(upgrade1));
-		button2.GetComponent<Button>().onClick.AddListener(() => upgrade2.Buy(upgrade2));
+		button1.GetComponent<Button>().onClick.AddListener(() => Onclick(upgrade1));
+		button2.GetComponent<Button>().onClick.AddListener(() => Onclick(upgrade2));
 	}
 
 	public void RestartScene(){
@@ -43,5 +43,14 @@ public class Scr_Game_Manager : MonoBehaviour
 
 	public void Onclick(Upgrade upgrade){
 		upgrade.Buy(upgrade);
+		button1.SetActive(false);
+		button2.SetActive(false);
+	}
+
+	public void Onclick(Skill upgrade)
+	{
+		upgrade.Buy(upgrade);
+		button1.SetActive(false);
+		button2.SetActive(false);
 	}
 }

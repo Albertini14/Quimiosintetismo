@@ -15,6 +15,8 @@ public class Scr_Player_Stats : Scr_Character_Stats
 	public Stat Evolution;
 	public int Level;
 
+	bool hasAttack;
+
 	void Start(){
 		DontDestroyOnLoad(gameObject);
 		UpdateUI();
@@ -71,7 +73,8 @@ public class Scr_Player_Stats : Scr_Character_Stats
 				//activate dash
 				break;
 			case "Attack":
-				//activate attack
+				FindObjectOfType<Attack>().enabled = true;
+				hasAttack = true;
 				break;
 		}
 	}
@@ -116,6 +119,9 @@ public class Scr_Player_Stats : Scr_Character_Stats
 		if (Level > 1)
 		{
 			FindObjectOfType<Clone>().enabled = false;
+		}
+		if(Level >= 3 && hasAttack){
+			FindObjectOfType<Attack>().enabled = true;
 		}
 	}
 
