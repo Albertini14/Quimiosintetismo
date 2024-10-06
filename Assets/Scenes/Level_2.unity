@@ -3047,7 +3047,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -3061,7 +3061,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1, y: 1}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &888354568
 GameObject:
@@ -146924,7 +146924,7 @@ Animator:
   m_GameObject: {fileID: 1599357264}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8a7ead7eb14b54e4b96d9720198da995, type: 2}
+  m_Controller: {fileID: 9100000, guid: 41c9c4b7e87274840b9d2b57bccf4c01, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -146957,12 +146957,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3109295593891276306, guid: 8726538903f20e148b28fde217ef7265, type: 3}
       propertyPath: m_FlipX
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3109295593891276306, guid: 8726538903f20e148b28fde217ef7265, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -822497203, guid: 84b758e72a3aa694eb24702cea1ae851, type: 3}
+      objectReference: {fileID: 706139887, guid: 42b6e668e096b654089767842e149e87, type: 3}
+    - target: {fileID: 6008332951122819542, guid: 8726538903f20e148b28fde217ef7265, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5745
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008332951122819542, guid: 8726538903f20e148b28fde217ef7265, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5745
+      objectReference: {fileID: 0}
+    - target: {fileID: 6008332951122819542, guid: 8726538903f20e148b28fde217ef7265, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.5745
+      objectReference: {fileID: 0}
     - target: {fileID: 6008332951122819542, guid: 8726538903f20e148b28fde217ef7265, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.499
@@ -147006,6 +147018,14 @@ PrefabInstance:
     - target: {fileID: 8184106821907191796, guid: 8726538903f20e148b28fde217ef7265, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410726785616554663, guid: 8726538903f20e148b28fde217ef7265, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.348
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410726785616554663, guid: 8726538903f20e148b28fde217ef7265, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.164
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

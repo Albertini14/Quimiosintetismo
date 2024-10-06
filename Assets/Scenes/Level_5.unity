@@ -35005,7 +35005,7 @@ Animator:
   m_GameObject: {fileID: 1599357264}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 8a7ead7eb14b54e4b96d9720198da995, type: 2}
+  m_Controller: {fileID: 9100000, guid: 330c742e508e7964085294819e35e35f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -35027,6 +35027,7 @@ GameObject:
   - component: {fileID: 1978084569}
   - component: {fileID: 1978084571}
   - component: {fileID: 1978084570}
+  - component: {fileID: 1978084572}
   m_Layer: 0
   m_Name: Tilemap
   m_TagString: Untagged
@@ -84170,6 +84171,42 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!19719996 &1978084572
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978084568}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0
+  m_UseDelaunayMesh: 0
 --- !u!1001 &2701226888807228301
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -84197,7 +84234,7 @@ PrefabInstance:
     - target: {fileID: 3109295593891276306, guid: 8726538903f20e148b28fde217ef7265, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -822497203, guid: 84b758e72a3aa694eb24702cea1ae851, type: 3}
+      objectReference: {fileID: -176898022, guid: 2f4c997c8def19f4d88cedd3871b7ca4, type: 3}
     - target: {fileID: 6008332951122819542, guid: 8726538903f20e148b28fde217ef7265, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.499
